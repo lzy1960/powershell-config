@@ -1,0 +1,152 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": [
+        {
+            "command": {
+                "action": "copy",
+                "singleLine": false
+            },
+            "keys": "ctrl+c"
+        },
+        {
+            "command": "paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "keys": "alt+shift+d"
+        }
+    ],
+    "alwaysShowTabs": true,
+    "confirmCloseAllTabs": true,
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "defaultProfile": "{9e6e7052-70a3-437c-a494-ebe17548ba1b}",
+    "disabledProfileSources": [],
+    "experimental.rendering.forceFullRepaint": true,
+    "experimental.rendering.software": true,
+    "initialCols": 120,
+    "initialPosition": ",",
+    "initialRows": 30,
+    "launchMode": "default",
+    "profiles": {
+        "defaults": {
+            "altGrAliasing": true,
+            "antialiasingMode": "cleartype",
+            "backgroundImage": "https://c-ssl.duitang.com/uploads/blog/202204/08/20220408023808_731f3.jpg",
+            "backgroundImageAlignment": "center",
+            "backgroundImageOpacity": 1,
+            "backgroundImageStretchMode": "uniformToFill",
+            "colorScheme": "Solarized Dark",
+            "cursorColor": "#FFFFFF",
+            "cursorHeight": 100,
+            "cursorShape": "vintage",
+            "experimental.retroTerminalEffect": false,
+            "font": {
+                "face": "Sarasa Term SC",
+                "size": 12,
+                "weight": "bold"
+            },
+            "opacity": 0,
+            "padding": "8, 8, 8, 8",
+            "scrollbarState": "visible",
+            "snapOnInput": true,
+            "startingDirectory": "%USERPROFILE%",
+            "suppressApplicationTitle": true,
+            "useAcrylic": true
+        },
+        "list": [
+            {
+                "commandline": "gsudo.exe powershell.exe",
+                "guid": "{9e6e7052-70a3-437c-a494-ebe17548ba1b}",
+                "hidden": false,
+                "icon": "https://i.imgur.com/Giuj3FT.png",
+                "name": "Windows PowerShell Admin"
+            },
+            {
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
+            },
+            {
+                "colorScheme": "One Half Dark",
+                "commandline": "I:\\Git\\bin\\bash.exe",
+                "guid": "{6a60ae88-6abb-4930-9ec0-262b4d02a8df}",
+                "hidden": false,
+                "icon": "I:\\Git\\mingw64\\share\\git\\git-for-windows.ico",
+                "name": "Git Bash",
+                "opacity": 70,
+                "useAcrylic": true
+            },
+            {
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "命令提示符"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                "guid": "{a6593e5c-5146-50be-a19d-cd7a315b899c}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{86941d80-6539-57f6-b836-aa0c3361c117}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
+            }
+        ]
+    },
+    "schemes": [
+        {
+            "background": "#001E27",
+            "black": "#002831",
+            "blue": "#2176C7",
+            "brightBlack": "#56a8c6",
+            "brightBlue": "#708284",
+            "brightCyan": "#718282",
+            "brightGreen": "#475B62",
+            "brightPurple": "#5956BA",
+            "brightRed": "#BD3613",
+            "brightWhite": "#FCF4DC",
+            "brightYellow": "#EEEEEE",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#35c1b1",
+            "foreground": "#EEEEEE",
+            "green": "#738A05",
+            "name": "Solarized Dark",
+            "purple": "#C61C6F",
+            "red": "#D11C24",
+            "selectionBackground": "#FFFFFF",
+            "white": "#EAE3CB",
+            "yellow": "#A57706"
+        }
+    ],
+    "showTabsInTitlebar": true,
+    "showTerminalTitleInTitlebar": true,
+    "snapToGridOnResize": true,
+    "startOnUserLogin": false,
+    "tabWidthMode": "equal",
+    "theme": "system"
+}
