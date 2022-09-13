@@ -28,6 +28,9 @@ Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
 # 设置向下键为前向搜索历史纪录
 Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 
+# 设置预测文本的颜色
+Set-PSReadLineOption -Colors @{ InlinePrediction = "#267233" }
+
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\PowerLine.omp.json" | Invoke-Expression
 
 # Chocolatey profile
