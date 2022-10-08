@@ -28,50 +28,126 @@ Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 Set-PSReadLineOption -Colors @{ InlinePrediction = "#267233" }
 
 # npm alias
-function nin {npm i}
-function nu {npm un}
+function nin {
+  param($pack)
+  npm i $pack
+}
+function nu {
+  param($pack)
+  npm un $pack
+}
 function nls {npm ls}
-function nlsg {npm ls -g}
-function ncl {rimraf ./node_modules/}
-function nr {npm run}
-function nd {npm run dev}
-function nse {npm run serve}
-function nb {npm run build}
-function nt {npm run test}
-function nl {npm run lint}
-function nig {npm i -g}
-function nid {npm i -D}
-function nigd {npm i -gD}
+function nlsg {nls -g}
+function nr {
+  param($script)
+  npm run $script
+}
+function nd {nr dev}
+function nse {nr serve}
+function nb {nr build}
+function nt {nr test}
+function nl {nr lint}
+function nig {
+  param($pack)
+  ni -g $pack
+}
+function nid {
+  param($pack)
+  ni -D $pack
+}
+function nigd {
+  param($pack)
+  ni -gD $pack
+}
 
 # pnpm alias
-function pi {pnpm i}
+function pi {
+  param($pack)
+  pnpm i $pack
+}
+function prm {
+  param($pack)
+  pnpm i $pack
+}
 function prm {pnpm remove}
 function pls {pnpm ls}
 function plsg {pnpm ls -g}
-function pa {pnpm add}
-function pr {pnpm run}
-function pd {pnpm run dev}
-function pse {pnpm run serve}
-function pb {pnpm run build}
-function pt {pnpm run test}
-function pl {pnpm run lint}
-function pig {pnpm i -g}
-function pid {pnpm i -D}
-function pigd {pnpm i -gD}
+function pa {
+  param($pack)
+  pnpm add $pack
+}
+function pr {
+  param($script)
+  pnpm run $script
+}
+function pd {pr dev}
+function pse {pr serve}
+function pb {pr build}
+function pt {pr test}
+function pl {pr lint}
+function pig {
+  param($pack)
+  pr -g $pack
+}
+function pid {
+  param($pack)
+  pr -D $pack
+}
+function pigd {
+  param($pack)
+  pr -gD $pack
+}
 
 # yarn alias
 function y {yarn}
-function ya {yarn add}
-function yad {yarn add -D}
-function yrm {yarn remove}
+function ya {
+  param($pack)
+  ya $pack
+}
+function yad {
+  param($pack)
+  ya -D $pack
+}
+function yrm {
+  param($pack)
+  yarn remove $pack
+}
 function yls {yarn list}
-function yga {yarn global add}
-function yga {yarn global add -D}
-function ygrm {yarn global remove}
-function ygls {yarn global list}
-function yr {yarn run}
-function yd {yarn run dev}
-function ys {yarn run serve}
-function yb {yarn run build}
-function yt {yarn run test}
-function yl {yarn run lint}
+function yg {
+  param($script)
+  yarn global $script
+}
+function yga {
+  param($pack)
+  yg add $pack
+}
+function ygad {
+  param($pack)
+  yga -D $pack
+}
+function ygrm {
+  param($pack)
+  yg remove $pack
+}
+function ygls {yg list}
+function yr {
+  param($script)
+  yarn run $script
+}
+function yd {yr dev}
+function ys {yr serve}
+function yb {yr build}
+function yt {yr test}
+function yl {yr lint}
+
+# vscode
+function c {
+  param($path='.')
+  code $path
+}
+
+# rimraf
+function rim {
+  param($path='./node_modules/')
+  rimraf $path
+}
