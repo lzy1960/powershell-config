@@ -36,6 +36,7 @@ function ncl {rimraf ./node_modules/}
 function nr {npm run}
 function nd {npm run dev}
 function nse {npm run serve}
+function nb {npm run build}
 function nt {npm run test}
 function nl {npm run lint}
 function nig {npm i -g}
@@ -51,6 +52,7 @@ function pa {pnpm add}
 function pr {pnpm run}
 function pd {pnpm run dev}
 function pse {pnpm run serve}
+function pb {pnpm run build}
 function pt {pnpm run test}
 function pl {pnpm run lint}
 function pig {pnpm i -g}
@@ -70,5 +72,6 @@ function ygls {yarn global list}
 function yr {yarn run}
 function yd {yarn run dev}
 function ys {yarn run serve}
+function yb {yarn run build}
 function yt {yarn run test}
 function yl {yarn run lint}
