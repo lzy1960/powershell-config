@@ -67,9 +67,8 @@ function pi {
 }
 function prm {
   param($pack)
-  pnpm i $pack
+  pnpm remove $pack
 }
-function prm {pnpm remove}
 function pls {pnpm ls}
 function plsg {pnpm ls -g}
 function pa {
@@ -87,15 +86,15 @@ function pt {pr test}
 function pl {pr lint}
 function pig {
   param($pack)
-  pr -g $pack
+  pi -g $pack
 }
 function pid {
   param($pack)
-  pr -D $pack
+  pi -D $pack
 }
 function pigd {
   param($pack)
-  pr -gD $pack
+  pi -gD $pack
 }
 
 # yarn alias
