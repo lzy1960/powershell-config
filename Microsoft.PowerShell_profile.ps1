@@ -28,116 +28,145 @@ Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 Set-PSReadLineOption -Colors @{ InlinePrediction = "#267233" }
 
 # npm alias
+function n {
+  npm $args
+}
 function nin {
-  param($pack)
-  npm i $pack
+  npm i $args
 }
 function nu {
-  param($pack)
-  npm un $pack
+  npm uninstall $args
 }
-function nls {npm ls}
-function nlsg {nls -g}
+function nls {
+  npm ls $args
+}
+function nlsg {
+  nls -g $args
+}
 function nr {
-  param($script)
-  npm run $script
+  npm run $args
 }
-function nd {nr dev}
-function nse {nr serve}
-function nb {nr build}
-function nt {nr test}
-function nl {nr lint}
+function nd {
+  nr dev
+}
+function nse {
+  nr serve
+}
+function nb {
+  nr build
+}
+function nt {
+  nr test
+}
+function nl {
+  nr lint
+}
 function nig {
-  param($pack)
-  ni -g $pack
+  nin -g $args
 }
 function nid {
-  param($pack)
-  ni -D $pack
+  nin -D $args
 }
 function nigd {
-  param($pack)
-  ni -gD $pack
+  nin -gD $args
 }
 
 # pnpm alias
+function p {
+  pnpm $args
+}
 function pi {
-  param($pack)
-  pnpm i $pack
+  pnpm i $args
 }
 function prm {
-  param($pack)
-  pnpm remove $pack
+  pnpm remove $args
 }
-function pls {pnpm ls}
-function plsg {pnpm ls -g}
+function pls {
+  pnpm ls $args
+}
+function plsg {
+  pnpm ls -g $args
+}
 function pa {
-  param($pack)
-  pnpm add $pack
+  pnpm add $args
 }
 function pr {
-  param($script)
-  pnpm run $script
+  pnpm run $args
 }
-function pd {pr dev}
-function pse {pr serve}
-function pb {pr build}
-function pt {pr test}
-function pl {pr lint}
+function pd {
+  pr dev
+}
+function pse {
+  pr serve
+}
+function pb {
+  pr build
+}
+function pt {
+  pr test
+}
+function pl {
+  pr lint
+}
 function pig {
-  param($pack)
-  pi -g $pack
+  pi -g $args
 }
 function pid {
-  param($pack)
-  pi -D $pack
+  pnpm i -D $args
 }
 function pigd {
-  param($pack)
-  pi -gD $pack
+  pi -gD $args
 }
 
 # yarn alias
-function y {yarn}
+function y {
+  yarn
+}
 function ya {
-  param($pack)
-  ya $pack
+  ya $args
 }
 function yad {
-  param($pack)
-  ya -D $pack
+  ya -D $args
 }
 function yrm {
-  param($pack)
-  yarn remove $pack
+  yarn remove $args
 }
-function yls {yarn list}
+function yls {
+  yarn list $args
+}
 function yg {
-  param($script)
-  yarn global $script
+  yarn global $args
 }
 function yga {
-  param($pack)
-  yg add $pack
+  yg add $args
 }
 function ygad {
-  param($pack)
-  yga -D $pack
+  yga -D $args
 }
 function ygrm {
-  param($pack)
-  yg remove $pack
+  yg remove $args
 }
-function ygls {yg list}
+function ygls {
+  yg list
+}
 function yr {
-  param($script)
-  yarn run $script
+  yarn run $args
 }
-function yd {yr dev}
-function ys {yr serve}
-function yb {yr build}
-function yt {yr test}
-function yl {yr lint}
+function yd {
+  yr dev
+}
+function ys {
+  yr serve
+}
+function yb {
+  yr build
+}
+function yt {
+  yr test
+}
+function yl {
+  yr lint
+}
 
 # vscode
 function c {
