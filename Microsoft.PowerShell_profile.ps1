@@ -176,6 +176,9 @@ function c {
 
 # rimraf
 function rim {
-  param($path='./node_modules/')
-  rimraf $path
+  If ($args.length -le 0) {
+    rimraf './node_modules/'
+  } Else {
+    rimraf $args
+  }
 }
