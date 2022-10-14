@@ -27,11 +27,14 @@ Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 # 设置预测文本的颜色
 Set-PSReadLineOption -Colors @{ InlinePrediction = "#267233" }
 
+# 移除默认的 ni 命令
+Remove-Item Alias:ni -Force
+
 # npm alias
 function n {
   npm $args
 }
-function nin {
+function ni {
   npm i $args
 }
 function nu {
@@ -62,13 +65,13 @@ function nl {
   nr lint
 }
 function nig {
-  nin -g $args
+  ni -g $args
 }
 function nid {
-  nin -D $args
+  ni -D $args
 }
 function nigd {
-  nin -gD $args
+  ni -gD $args
 }
 
 # pnpm alias
