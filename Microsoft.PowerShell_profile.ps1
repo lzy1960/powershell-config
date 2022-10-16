@@ -37,8 +37,11 @@ function n {
 function ni {
   npm i $args
 }
-function nu {
+function nun {
   npm uninstall $args
+}
+function nung {
+  nun -g $args
 }
 function nls {
   npm ls $args
@@ -73,6 +76,12 @@ function nid {
 function nigd {
   ni -gD $args
 }
+function nu {
+  npm update $args
+}
+function nug {
+  nu -g
+}
 
 # pnpm alias
 function p {
@@ -83,6 +92,12 @@ function pi {
 }
 function prm {
   pnpm remove $args
+}
+function pu {
+  pnpm update $args
+}
+function pug {
+  pu -g $args
 }
 function pls {
   pnpm ls $args
@@ -137,6 +152,9 @@ function yrm {
 function yls {
   yarn list $args
 }
+function yu {
+  yarn upgrade $args
+}
 function yg {
   yarn global $args
 }
@@ -151,6 +169,9 @@ function ygrm {
 }
 function ygls {
   yg list
+}
+function ygu {
+  yg upgrade $args
 }
 function yr {
   yarn run $args
