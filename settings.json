@@ -34,6 +34,8 @@
     "disabledProfileSources": [],
     "experimental.rendering.forceFullRepaint": true,
     "experimental.rendering.software": true,
+    "experimental.connection.passthroughMode": true,
+    "experimental.useAtlasEngine": true,
     "initialCols": 120,
     "initialPosition": ",",
     "initialRows": 30,
