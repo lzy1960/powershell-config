@@ -52,6 +52,9 @@ function nlsg {
 function nr {
   npm run $args
 }
+function nst {
+  nr start
+}
 function nd {
   nr dev
 }
@@ -110,6 +113,9 @@ function pa {
 }
 function pr {
   pnpm run $args
+}
+function pst {
+  pr start
 }
 function pd {
   pr dev
@@ -175,6 +181,9 @@ function ygu {
 }
 function yr {
   yarn run $args
+}
+function yst {
+  yr start
 }
 function yd {
   yr dev
