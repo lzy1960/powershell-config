@@ -31,7 +31,7 @@ And 4 Modules
 
 ## Config
 
-1. Copy `Microsoft.PowerShell_profile.ps1` to `C:\Users\Administrator`
+1. Copy `Microsoft.PowerShell_profile.ps1` to `%UserProfile%\Documents\WindowsPowerShell`
 2. Open `settings.json` of `Windows Terminal`, replace content of `settings.json`
    - The font face of config is [Sarasa Term SC](https://github.com/be5invis/Sarasa-Gothic), you can download from this link or modify it to what you like
 3. Open `Windows Terminal`, enjoy it ~
