@@ -193,6 +193,17 @@ alias szs='source ~/.zshrc'
 # dir
 alias cdp='cd ~/Desktop/project'
 
+# interact with windows
+# alias e='explorer.exe'
+function e {
+  if [ -n "$1" ]
+    then
+    explorer.exe $1
+  else
+    explorer.exe .
+  fi
+}
+
 # Vue Hot Reload
 export CHOKIDAR_USEPOLLING=true
 
