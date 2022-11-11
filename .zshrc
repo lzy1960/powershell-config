@@ -3,6 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export DISPLAY=:0.0
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -70,7 +71,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#ff00ff,bg=cyan,bold,underline"
 
@@ -188,3 +189,12 @@ function c {
 # zshrc
 alias ezs='vim ~/.zshrc'
 alias szs='source ~/.zshrc'
+
+# dir
+alias cdp='cd ~/Desktop/project'
+
+# Vue Hot Reload
+export CHOKIDAR_USEPOLLING=true
+
+# Editor
+export EDITOR=/usr/bin/vim
