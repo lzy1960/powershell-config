@@ -20,12 +20,13 @@ And 4 Modules
 2. run the following command
 
    ```bash
+   Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
    # install Oh-My-Posh
    winget install JanDeDobbeleer.OhMyPosh -s winget
    # install modules
    Install-Module PSColor
-   Install-Module posh-git
-   Install-Module git-aliases -DisableNameChecking
+   Install-Module posh-git -Force
+   Install-Module git-aliases -Scope CurrentUser -AllowClobber
    Install-Module PSReadLine -Force
    ```
 
