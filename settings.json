@@ -75,11 +75,11 @@
                 "name": "Windows PowerShell Admin"
             },
             {
+                "commandline": "gsudo.exe C:\\\"Program Files\"\\PowerShell\\7\\pwsh.exe",
                 "guid": "{5ec8224d-9413-4890-a569-4df0c807e441}",
                 "hidden": false,
-                "name": "Windows PowerShell 7",
-                "commandline": "gsudo.exe I:\\PowerShell\\7\\pwsh.exe",
-                "icon": "I:\\PowerShell\\7\\assets\\Powershell_black.ico"
+                "icon": "C:\\Program Files\\PowerShell\\7\\assets\\Powershell_black.ico",
+                "name": "Windows PowerShell 7"
             },
             {
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
