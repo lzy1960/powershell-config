@@ -147,6 +147,3 @@ export CHOKIDAR_USEPOLLING=true
 
 # Editor
 export EDITOR=/usr/bin/vim
-
-# 自动启动cron服务
-[ -z "$(ps -ef | grep cron | grep -v grep)" ] && sudo /etc/init.d/cron start &> /dev/null
