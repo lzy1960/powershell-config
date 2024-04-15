@@ -79,7 +79,7 @@ function nid {
 function nigd {
   ni -gD $args
 }
-function nu {
+function nup {
   npm update $args
 }
 function nug {
